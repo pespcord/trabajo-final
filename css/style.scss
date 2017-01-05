@@ -1,3 +1,5 @@
+$color-azul: #0080ff;
+
 .navbar {
 	&.navbar-default {
 	background-color: #fff;
@@ -9,7 +11,7 @@
 .navbar-nav {
 	&.navbar-right {
 		.activo {
-			background-color: #0080ff;
+			background-color: $color-azul;
 			color: #fff;
 			}
 	}
@@ -34,7 +36,7 @@
 	display:flex;
 	align-content: center;
 	height: 600px;
-	background-color: #0080ff;
+	background-color: $color-azul;
 	padding: 76px;
 	h1 {
 		color: #fff;
@@ -64,8 +66,6 @@ form {
 		border-color: none;
 
 	}
-
-
 	}
 
 }
@@ -76,5 +76,58 @@ h2 {
 	padding: 20px; 
 }
 
+.pricing {
+	display: flex;
+	flex-flow: row wrap;
+	align-content:center;
+	.pricing-details {
+		width: 20%;
+		text-align: center;
+		border: 1px solid;
+		border-color: #0080ff;
+		h3 {
+			font-size: 35px;
+		}
+		p {
+			color: $color-azul;
+		}
+	}
 
+}
+
+section {
+	    border-top: 1px solid #eee;
+	    margin-top: 40px;
+}
+.btn {
+	&.btn-primary {
+		&.btn-lg {
+			&.btn-block {
+				&.btn-ver-mas-planes {
+				background-color: $color-azul;
+				margin-top: 20px;
+				font-size: 15px;
+				}
+			}
+
+		}
+		
+
+	}
+
+}
+
+.container {
+	&.logos {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.container {
+	&.get-in-touch {
+		background-image: url(img/bg-git.png);
+	}
+}
 
