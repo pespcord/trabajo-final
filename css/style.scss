@@ -4,7 +4,7 @@ $color-azul: #0080ff;
 	&.navbar-default {
 	background-color: #fff;
     border-color: #fff;
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #eee;
 	}
 }
 
@@ -12,7 +12,10 @@ $color-azul: #0080ff;
 	&.navbar-right {
 		.activo {
 			background-color: $color-azul;
+			a.blanco {
 			color: #fff;
+			}
+
 			}
 	}
 }
@@ -125,9 +128,63 @@ section {
 	}
 }
 
-.container {
-	&.get-in-touch {
-		background-image: url(img/bg-git.png);
+
+.get-in-touch {
+	background-image: url(../img/bg-git.png);
+	height: 300px;
+	background-size: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	margin-top: 50px;
+	align-content: center;
+	color: #fff;
+	.contenido-git {
+		display: flex;
+		align-content: center;
+		flex-direction: column;
+		padding: 30px;
 	}
 }
+.btn {
+	&.btn-primary {
+		&.btn-lg {
+			&.btn-block {
+				&.btn-ver-mas-git {
+				background-color: #fff;
+				margin-top: 20px;
+				font-size: 15px;
+				color: $color-azul;
+				}
+			}
+
+		}
+		
+
+	}
+
+}
+
+footer {
+	background-color: #2e3234;
+	width: 100%;
+	.fin {
+		color: #fff;
+		width: 100%;
+		.row {
+			.col-md-2 {
+				ul {
+				list-style-type: none;
+				text-align: center;
+				font-size: 10px;
+				h3 {
+					font-size: 15px;
+				}
+				}
+			}
+
+		}
+	}
+
+}
+
 
